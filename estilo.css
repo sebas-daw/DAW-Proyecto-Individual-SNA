@@ -3,8 +3,18 @@ html{
     padding: 0;
     scroll-behavior: smooth;
 }
+#contenedor_titulo{
+    position: relative;
+}
+#img_titulo{
+    width: 100%;
+    display: block;
+}
 #titulo{
-    text-align: right;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    color: antiquewhite;
 }
 #menu_informativo{
     display: grid;
@@ -26,6 +36,21 @@ html{
     padding: 1.5rem;
     border: solid 1px black; /* cambriar por variable */
 }
-.texto_contenido{
+.contenido_izq{
+    display: grid;
+    grid-template-areas: "texto imagen";
+    grid-template-columns: 2fr 1fr;
+}
+.contenido_der{
+    display: grid;
+    grid-template-areas: "imagen texto";
+    grid-template-columns: 1fr 2fr;
+}
+section.contenido .texto_contenido{
+    grid-area: texto;
     text-align: center;
 }
+
+section.contenido .imagen{
+    grid-area: imagen;
+} 
