@@ -1,0 +1,31 @@
+html{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+#titulo{
+    text-align: right;
+}
+#menu_informativo{
+    display: grid;
+    grid-template-areas: "recuadro1 recuadro2 recuadro2";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+#menu_informativo:first-child{
+    grid-area: recuadro1;
+}
+#menu_informativo:nth-child(2){
+    grid-area: recuadro2;
+}
+#menu_informativo:last-child{
+    grid-area: recuadro3;
+}
+.borde_1{
+    margin: 1rem;
+    padding: 1.5rem;
+    border: solid 1px black; /* cambriar por variable */
+}
+.texto_contenido{
+    text-align: center;
+}
