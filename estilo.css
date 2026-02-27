@@ -20,6 +20,11 @@ section{
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.principal{
+    margin: 0;
+    padding: 0;
 }
 #contenedor_titulo{
     position: relative;
@@ -32,7 +37,7 @@ section{
     position: absolute;
     bottom: 2rem;
     right: 2rem;
-    color: antiquewhite;
+    color: var(--color-letra);
 }
 #menu_informativo{
     display: grid;
@@ -51,8 +56,8 @@ section{
 }
 .borde_1{
     margin: 1rem;
-    padding: 1.5rem;
-    border: solid 1px black; /* cambriar por variable */
+    padding: 0.7rem;
+    border: solid 1px var(--color-letra);
 }
 .contenido {
     padding-left: 10%;
@@ -88,11 +93,28 @@ section{
     max-height: 100%;
     overflow: hidden;
     border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 } 
  div.imagen img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 0.5rem;
+}
+
+#contenedor_enlace{
+    text-align: center;
+}
+#contenedor_enlace a{
+    text-decoration: none;
+    color: var(--color-letra);
+    margin:1rem ;
+    padding: 0.5rem;
+    background-color: var(--color-fondo-html);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+#flecha_volver{
+    
 }
 
