@@ -21,6 +21,7 @@ section{
     margin-bottom: 1rem;
     padding: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    background-color: var(--color-section) ;
 }
 .principal{
     margin: 0;
@@ -62,8 +63,7 @@ section{
 }
 .contenido {
     padding-left: 10%;
-    padding-right: 10%;
-    background-color: var(--color-section) ;}
+    padding-right: 10%;}
 
 
 .izq{
@@ -116,3 +116,24 @@ section{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
+/* Especifico para el Juego */
+
+    main.juego{
+        display: grid;
+        grid-template-areas: 
+            "zona_imagenes zona_imagenes" 
+            "zona_personaje zona_juego";
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 2fr 1fr;
+        align-items: center;
+        gap: 1rem;
+    }
+    .zona_imagenes{
+        grid-area: zona_imagenes;
+    }
+    .zona_personaje{
+        grid-area: zona_personaje;
+    }
+    .zona_juego{
+        grid-area: zona_juego;
+    }
