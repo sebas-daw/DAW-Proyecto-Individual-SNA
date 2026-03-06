@@ -16,6 +16,17 @@ body{
     background-color: var(--color-fondo-html);
     color: var(--color-letra);
  }
+.marco{
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+}
+.marco img{
+    object-fit: cover;
+}
 section{
     margin-top: 1rem;
     margin-bottom: 1rem;
