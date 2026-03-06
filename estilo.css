@@ -17,7 +17,7 @@ body{
     color: var(--color-letra);
  }
 .marco{
-    position:absolute;
+    position:fixed;
     top: 0;
     left: 0;
     height: 100%;
@@ -25,7 +25,22 @@ body{
     z-index: 3;
 }
 .marco img{
+    height: 100%;
+    width: 100%;
     object-fit: cover;
+}
+header{
+    position: fixed;
+    display:  grid;
+    grid-template-areas: "logo nav";
+    grid-template-columns: 1fr 3fr;
+}
+#logo{
+    grid-area: logo;
+}
+nav{
+    grid-area: nav;
+    text-align: right;
 }
 section{
     margin-top: 1rem;
