@@ -40,19 +40,11 @@ header{
     z-index: 4;
 }
 #logo{
-    position: relative;
-    top: 0;
-    left: 2rem;
     grid-area: logo;
-    background-color: aliceblue;
-    padding-left: 2rem;
 }
 #logo img{
-    position: absolute;
-    top: 0;
     height: 100%;
     width: 100%;
-    background-color: #193825;
 }
 nav{
     grid-area: nav;
