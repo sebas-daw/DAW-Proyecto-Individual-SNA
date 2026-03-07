@@ -35,21 +35,31 @@ header{
     width: 100%;
     display:  grid;
     grid-template-areas: "logo nav";
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: auto 1fr;
     grid-template-rows: 4rem;
-    z-index: 2;
+    z-index: 4;
 }
 #logo{
+    position: relative;
+    top: 0;
+    left: 2rem;
     grid-area: logo;
+    background-color: aliceblue;
+    padding-left: 2rem;
 }
 #logo img{
+    position: absolute;
+    top: 0;
     height: 100%;
     width: 100%;
+    background-color: #193825;
 }
 nav{
     grid-area: nav;
-    text-align: right;
+    text-align: center;
+    background-color: #3f312d;
 }
+
 section{
     margin-top: 1rem;
     margin-bottom: 1rem;
