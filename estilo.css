@@ -54,6 +54,13 @@ nav a{
     text-decoration: none;
     color: var(--color-letra );
 }
+nav:hover .desplegable{
+        display: block;
+    
+}
+.desplegable{
+    display: none;
+}
 
 section{
     margin-top: 1rem;
