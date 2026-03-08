@@ -5,6 +5,7 @@
 }
 
 html{
+    font-family: system-ui;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -31,11 +32,12 @@ body{
 }
 header{
     position: fixed;
+    font-size:x-large;
     margin: 0;
     width: 100%;
     display:  grid;
-    grid-template-areas: "logo nav";
-    grid-template-columns: auto 1fr;
+    grid-template-areas: "logo inicio aventura contacto";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 4rem;
     z-index: 4;
 }
@@ -46,20 +48,26 @@ header{
     height: 100%;
     width: 100%;
 }
-nav{
-    grid-area: nav;
-    text-align: center;
-}
+#nav_inicio{grid-area: inicio;
+background-color: #193825;}
+#nav_aventuras{grid-area: aventura;
+background-color: aqua;}
+#nav_contactos{grid-area: contacto;
+background-color: blanchedalmond;}
 nav a{
     text-decoration: none;
     color: var(--color-letra );
+    background-color: #3f312d;
 }
-nav:hover .desplegable{
-        display: block;
+#nav_aventuras:hover .desplegable{
+    display: block;
     
 }
 .desplegable{
     display: none;
+    list-style: none;
+    position: absolute;
+    background-color: blue;
 }
 
 section{
