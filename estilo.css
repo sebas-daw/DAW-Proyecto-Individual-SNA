@@ -49,7 +49,10 @@ header{
 nav{
     grid-area: nav;
     text-align: center;
-    background-color: #3f312d;
+}
+nav a{
+    text-decoration: none;
+    color: var(--color-letra );
 }
 
 section{
